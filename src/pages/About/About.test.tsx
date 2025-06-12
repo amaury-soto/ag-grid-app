@@ -9,8 +9,7 @@ describe("About Component Structure", () => {
     expect(screen.getByTestId("page-title")).toBeInTheDocument();
     expect(screen.getByTestId("page-content")).toBeInTheDocument();
     expect(screen.getByTestId("description")).toBeInTheDocument();
-
-    // Verifica la jerarquía
+    
     const container = screen.getByTestId("page-container");
     expect(container).toContainElement(screen.getByTestId("page-title"));
     expect(container).toContainElement(screen.getByTestId("page-content"));

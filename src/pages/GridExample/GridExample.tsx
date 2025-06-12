@@ -77,12 +77,13 @@ const GridExample = () => {
   }, []);
 
   return (
-    <GridContainer>
+      <GridContainer data-testid="page-container">
       <PageTitle>AG Grid Example</PageTitle>
-      <PageContent>
+      <PageContent data-testid="page-content">
         <div
           className="ag-theme-alpine"
           style={{ width: "100%", height: "600px" }}
+          data-testid="grid-container"
         >
           <AgGridReact
             rowData={rowData}
