@@ -11,6 +11,9 @@ const Navigation = () => {
           <Link to="/grid">Grid Example</Link>
         </NavItem>
         <NavItem>
+          <Link to="/form">Form Example</Link>
+        </NavItem>
+        <NavItem>
           <Link to="/about">About</Link>
         </NavItem>
       </NavList>
