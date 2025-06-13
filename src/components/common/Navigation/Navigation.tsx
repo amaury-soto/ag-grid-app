@@ -8,13 +8,16 @@ const Navigation = () => {
           <Link to="/">Home</Link>
         </NavItem>
         <NavItem>
-          <Link to="/grid">Grid Example</Link>
+          <Link to="/grid">Grid</Link>
         </NavItem>
         <NavItem>
-          <Link to="/form">Form Example</Link>
+          <Link to="/form">Form </Link>
         </NavItem>
         <NavItem>
-          <Link to="/form-watch">Form Watch Example</Link>
+          <Link to="/form-watch">Form useWatch </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/redux">Redux</Link>
         </NavItem>
         <NavItem>
           <Link to="/about">About</Link>
