@@ -1,4 +1,4 @@
-import { Nav, NavList, NavItem, Link } from './Navigation.styles';
+import { Nav, NavList, NavItem, Link } from "./Navigation.styles";
 
 const Navigation = () => {
   return (
@@ -12,6 +12,9 @@ const Navigation = () => {
         </NavItem>
         <NavItem>
           <Link to="/form">Form Example</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/form-watch">Form Watch Example</Link>
         </NavItem>
         <NavItem>
           <Link to="/about">About</Link>
