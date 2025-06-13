@@ -136,7 +136,7 @@ const FormWatchExample = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       console.log(data);
       reset();
-      alert('Form submitted successfully!');
+      alert('Form submitted successfully!!');
     } catch (error) {
       console.error('Error submitting form:', error);
     }
