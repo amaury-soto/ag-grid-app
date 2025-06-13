@@ -1,4 +1,3 @@
-// src/services/api/productService.ts
 import axios from 'axios';
 
 export interface IProduct {
