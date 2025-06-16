@@ -7,15 +7,16 @@ import ShoppingCart from "../pages/ShoopingCart/ShoopingCart";
 import GridLayout from "../pages/Grid/GridLayout";
 import GridExample from "../pages/Grid/Basic/GridExample";
 import GridExampleSS from "../pages/Grid/ServerSide/GridServerSide";
-
+import RowGrouping from "../pages/Grid/RowGrouping/RowGrouping";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-    <Route path="/grid" element={<GridLayout />}>
+      <Route path="/grid" element={<GridLayout />}>
         <Route index element={<GridExample />} />
-        <Route path="server-side" element={<GridExampleSS/>} />
+        <Route path="server-side" element={<GridExampleSS />} />
+        <Route path="row-grouping" element={<RowGrouping />} />
         {/* more examples AG Grid */}
       </Route>
       <Route path="/form" element={<FormExample />} />

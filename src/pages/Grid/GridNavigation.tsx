@@ -11,6 +11,9 @@ const GridNavigation = () => {
         <GridNavItem>
           <NavLink to="/grid/server-side">Server Side</NavLink>
         </GridNavItem>
+        <GridNavItem>
+          <NavLink to="/grid/row-grouping">Row grouping</NavLink>
+        </GridNavItem>
         {/* other examples */}
       </GridNavList>
     </GridNav>
