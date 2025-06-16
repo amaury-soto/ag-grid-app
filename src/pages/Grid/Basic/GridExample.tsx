@@ -8,8 +8,8 @@ import {
   ILoadingOverlayParams
 } from "ag-grid-community";
 import { GridContainer } from "./GridExample.styles";
-import { PageTitle, PageContent } from "../styles/common.styles";
-import { getUsers, IUser } from "../../services/api/userService";
+import { PageTitle, PageContent } from "../../styles/common.styles";
+import { getUsers, IUser } from "../../../services/api/userService";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
