@@ -28,7 +28,7 @@ const mockUsers = [
 ];
 
 // Mock service
-jest.mock("../../services/api/userService", () => ({
+jest.mock("../../../services/api/userService", () => ({
   getUsers: jest.fn(),
 }));
 
@@ -52,7 +52,7 @@ describe("GridExample Component", () => {
   });
 
   test("handles data fetching and rendering", async () => {
-    const { getUsers } = require("../../services/api/userService");
+    const { getUsers } = require("../../../services/api/userService");
     getUsers.mockResolvedValueOnce(mockUsers);
 
     await act(async () => {
@@ -68,7 +68,7 @@ describe("GridExample Component", () => {
 
   test("handles API error", async () => {
     const consoleSpy = jest.spyOn(console, "error").mockImplementation();
-    const { getUsers } = require("../../services/api/userService");
+    const { getUsers } = require("../../../services/api/userService");
     getUsers.mockRejectedValueOnce(new Error("API Error"));
 
     await act(async () => {
