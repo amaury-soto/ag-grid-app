@@ -14,6 +14,9 @@ const GridNavigation = () => {
         <GridNavItem>
           <NavLink to="/grid/row-grouping">Row grouping</NavLink>
         </GridNavItem>
+        <GridNavItem>
+          <NavLink to="/grid/filter-list">Filter List</NavLink>
+        </GridNavItem>
         {/* other examples */}
       </GridNavList>
     </GridNav>

@@ -8,6 +8,7 @@ import GridLayout from "../pages/Grid/GridLayout";
 import GridExample from "../pages/Grid/Basic/GridExample";
 import GridExampleSS from "../pages/Grid/ServerSide/GridServerSide";
 import RowGrouping from "../pages/Grid/RowGrouping/RowGrouping";
+import FilterList from "../pages/Grid/FilterList/FilterList";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
         <Route index element={<GridExample />} />
         <Route path="server-side" element={<GridExampleSS />} />
         <Route path="row-grouping" element={<RowGrouping />} />
+        <Route path="filter-list" element={<FilterList />} />
         {/* more examples AG Grid */}
       </Route>
       <Route path="/form" element={<FormExample />} />

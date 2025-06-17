@@ -30,7 +30,7 @@ const RowGrouping = () => {
   const [columnDefs, setColumnDefs] = useState<ColDef[]>([
     { field: "country", rowGroup: true, hide: true },
     { field: "year", rowGroup: true, hide: true },
-    { field: "athlete", rowGroup: true, hide: true},
+    { field: "athlete", rowGroup: true, hide: true, enableRowGroup: true},
     { field: "sport" },
     { field: "gold" },
     { field: "silver" },
@@ -56,7 +56,7 @@ const RowGrouping = () => {
 
   return (
     <GridContainer data-testid="page-container">
-      <PageTitle>AG Grid Example</PageTitle>
+      <PageTitle>Row Grouping</PageTitle>
       <PageContent data-testid="page-content">
         <div
           className="ag-theme-alpine"
