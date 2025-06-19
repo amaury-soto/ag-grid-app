@@ -119,7 +119,7 @@ const PostForm = ({ onSuccess }: PostFormProps) => {
 
         {showSuccess && (
           <SuccessMessage>
-            Post created successfully!
+            Post created successfully!!
           </SuccessMessage>
         )}
 
