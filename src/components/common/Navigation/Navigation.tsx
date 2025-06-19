@@ -20,6 +20,9 @@ const Navigation = () => {
           <Link to="/redux">Redux</Link>
         </NavItem>
         <NavItem>
+          <Link to="/graphql">GraphQL Example</Link>
+        </NavItem>
+        <NavItem>
           <Link to="/about">About</Link>
         </NavItem>
       </NavList>

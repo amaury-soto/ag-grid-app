@@ -9,6 +9,7 @@ import GridExample from "../pages/Grid/Basic/GridExample";
 import GridExampleSS from "../pages/Grid/ServerSide/GridServerSide";
 import RowGrouping from "../pages/Grid/RowGrouping/RowGrouping";
 import FilterList from "../pages/Grid/FilterList/FilterList";
+import PostList from "../pages/GraphQL/PostList/PostList";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = () => {
       <Route path="/form" element={<FormExample />} />
       <Route path="/form-watch" element={<FormWatchExample />} />
       <Route path="/redux" element={<ShoppingCart />} />
+      <Route path="/graphql" element={<PostList />} />
       <Route path="/about" element={<About />} />
     </Routes>
   );

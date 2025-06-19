@@ -1,9 +1,6 @@
 "use client";
 
-import React, {
-  useMemo,
-  useState,
-} from "react";
+import React, { useMemo, useState } from "react";
 
 import { AgGridReact } from "ag-grid-react";
 import {
@@ -24,15 +21,14 @@ ModuleRegistry.registerModules([
   ...(process.env.NODE_ENV !== "production" ? [ValidationModule] : []),
 ]);
 
-
 const RowGrouping = () => {
-
   const [columnDefs, setColumnDefs] = useState<ColDef[]>([
     { field: "country", rowGroup: true, hide: true },
     { field: "year", rowGroup: true, hide: true },
-    { field: "athlete", rowGroup: true, hide: true, enableRowGroup: true},
+    { field: "athlete", rowGroup: true, hide: true, enableRowGroup: true },
     { field: "sport" },
-    { field: "gold" },
+    { field: "gold", aggFunc: "sum"
+    }, // Zain Spike
     { field: "silver" },
     { field: "bronze" },
   ]);
@@ -52,7 +48,7 @@ const RowGrouping = () => {
     "https://www.ag-grid.com/example-assets/olympic-winners.json"
   );
 
-  console.log('data-->', data)
+  console.log("data-->", data); // one time
 
   return (
     <GridContainer data-testid="page-container">
@@ -71,7 +67,7 @@ const RowGrouping = () => {
             autoGroupColumnDef={autoGroupColumnDef}
             rowGroupPanelShow={"always"}
             groupDefaultExpanded={1}
-           // groupDisplayType={"multipleColumns"}
+            // groupDisplayType={"multipleColumns"}
           />
         </div>
       </PageContent>
